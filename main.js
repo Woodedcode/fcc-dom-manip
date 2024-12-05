@@ -65,46 +65,28 @@
 // console.log(html.parentElement)
 
 ///// CHILD NODE TRAVERSAL
+// let ul = document.querySelector('ul')
+// console.log(ul.childNodes)
+// console.log(ul.firstChild)
+// console.log(ul.lastChild)
+
+
+
+// ul.childNodes[1].style.backgroundColor = 'blue'
+// console.log(ul.children)
+// console.log(ul.firstElementChild)
+// console.log(ul.lastElementChild)
 
 
 
 
 ///// SIBLING NODE TRAVERSAL
+// let ul = document.querySelector('ul')
+// let div = document.querySelector('div')
 
+// console.log(div.childNodes)
 
-
-
-
-
-
-
-
-//////////////////////////////// GETELEMENTBYID()
-// const title = document.getElementById('main-heading');
-// console.log(title)
-
-
-//////////////////////////////// GETELEMTENTBYCLASSNAME()
-// const listItem = document.getElementsByClassName('list-item')
-// console.log(listItem)
-
-
-//////////////////////////////// GETELEMENTSBYTAGNAME()
-// const listItem = document.getElementsByTagName('li')
-// console.log(listItem)
-
-
-//////////////////////////////// QUERYSELECTOR()
-// const container = document.querySelector('div.container')
-// console.log(container)
-
-
-
-//////////////////////////////// QUERYSELECTORALL()
-// const container = document.querySelectorAll('div')
-// console.log(container)
-
-
-
-
-
+// console.log(ul.previousSibling)
+// console.log(ul.previousElementSibling)
+// console.log(ul.nextSibling)
+// console.log(ul.nextElementSibling)
