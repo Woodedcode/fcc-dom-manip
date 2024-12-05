@@ -90,3 +90,35 @@
 // console.log(ul.previousElementSibling)
 // console.log(ul.nextSibling)
 // console.log(ul.nextElementSibling)
+
+
+
+
+
+
+
+//////////////////////////////// GETELEMENTBYID()
+// const title = document.getElementById('main-heading');
+// console.log(title)
+
+
+//////////////////////////////// GETELEMTENTBYCLASSNAME()
+// const listItem = document.getElementsByClassName('list-item')
+// console.log(listItem)
+
+
+//////////////////////////////// GETELEMENTSBYTAGNAME()
+// const listItem = document.getElementsByTagName('li')
+// console.log(listItem)
+
+
+//////////////////////////////// QUERYSELECTOR()
+// const container = document.querySelector('div.container')
+// console.log(container)
+
+
+
+//////////////////////////////// QUERYSELECTORALL()
+// const container = document.querySelectorAll('div')
+// console.log(container)
+
