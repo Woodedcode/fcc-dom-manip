@@ -1,70 +1,110 @@
-// console.log('works')
+//////////////////////////////// DOM MANIPULATION
 
-// console.log(window.location)
-// console.log(location)
-// console.log(innerHeight)
-// console.log(innerWidth)
-///////////////////////////////                DOM
-// console.log(document)
-// console.log(navigator)
-///////////////////////////////                SELECTING ELEMENTS
+///////////  HOW TO CHANGE THE STYLING (inline-styling)
+// const title = document.querySelector('#main-heading')
+// title.style.color = 'red'
+// console.log(title)
 
-// GETTERS
-// const p = document.querySelector('p')
-// const divs = document.querySelectorAll('div.item')
-// console.log(p)
-// console.log(divs)
+// const listItems = document.querySelectorAll('.list-item')
+// // listItems.style.fontSize = '5rem' > wont work, you need to have a loop to change them all
 
+// for ( i = 0; i < listItems.length; i++) {
+//     listItems[i].style.fontSize = '3rem';
+// }
 
-// ////////////// PARENT CHILD SELECTORS
-// const imgs = document.querySelector('.item img')
-// console.log(imgs)
-// const item2 = document.querySelector('.item2')
-// console.log(item2)
-// const item2Img= item2.querySelector('img')
-// console.log(item2Img)
+// console.log(listItems)
 
 
-// console.log('works')
+/////////// CREATING ELEMENTS
+// const ul = document.querySelector('ul')
+// const li = document.createElement('li')
+// // adding elements
+// ul.append(li)
+// // modifying the text
+// li.innerText = 'Zombie Land'
 
-// console.log(window.location)
-// console.log(location)
-// console.log(innerHeight)
-// console.log(innerWidth)
-///////////////////////////////                DOM
-// console.log(document)
-// console.log(navigator)
+// const firstListItem = document.querySelector('.list-item');
+// console.log(firstListItem.innerText)
+// console.log(firstListItem.textContent)
+// console.log(firstListItem.innerHTML)
 
-///////////////////////////////                SELECTING ELEMENTS
+///////////  MODIFYING ATTRIBUTES & CLASSES
+///// ID
+// li.setAttribute('id', 'main-heading')
+// li.removeAttribute('id')
 
-// GETTERS
-// const p = document.querySelector('p')
-// const divs = document.querySelectorAll('div.item')
-// console.log(p)
-// console.log(divs)
+// const title = document.querySelector('#main-heading')
+// console.log(title.getAttribute('id'))
+
+///// CLASS 
+// li.classList.add('list-item')
+// console.log(li.className)
+// console.log(li.classList.contains('list-item'))
+// li.classList.remove('list-item')
+// console.log(li.className)
+
+// console.log(li.classList.contains('list-item'))
+
+/////////// REMOVE ELEMENTS
+// li.remove()
 
 
-// ////////////// PARENT CHILD SELECTORS
-// const imgs = document.querySelector('.item img')
-// console.log(imgs)
-// const item2 = document.querySelector('.item2')
-// console.log(item2)
-// const item2Img= item2.querySelector('img')
-// console.log(item2Img)
+/////////// NAVIGATING THE DOM
+///// TRAVERSE THE DOM
 
-///////////////////////////////                ELEMENT PROPERTIES AND METHODS
-// const heading = document.querySelector('h2')
-// console.log(heading.textContent)
-// // heading.textContent = 'Ryan is cool'
-// // console.dir(heading.textContent)
-// // console.dir(heading.innerText)
-// console.log(heading.innerHTML)
-// console.log(heading.outerHTML)
 
-// ////////////// ADDING TO HTML WITHOUT HTML
-// const pizzaList = document.querySelector('.pizza')
-// console.log(pizzaList.textContent)
-// // pizzaList.textContent = `${pizzaList.textContent} 🍕`
-// ////////////// WITH INSERTADJACENTTEXT
-// pizzaList.insertAdjacentText('afterbegin', '🍕')
-// pizzaList.insertAdjacentText('beforeend', '🍕')
+
+
+///// PARENT NODE TRAVERSAL
+// let ul = document.querySelector('ul')
+// console.log(ul.parentNode.parentNode)
+// console.log(ul.parentElement.parentElement)
+
+// const html = document.documentElement;
+// console.log(html.parentNode)
+// console.log(html.parentElement)
+
+///// CHILD NODE TRAVERSAL
+
+
+
+
+///// SIBLING NODE TRAVERSAL
+
+
+
+
+
+
+
+
+
+//////////////////////////////// GETELEMENTBYID()
+// const title = document.getElementById('main-heading');
+// console.log(title)
+
+
+//////////////////////////////// GETELEMTENTBYCLASSNAME()
+// const listItem = document.getElementsByClassName('list-item')
+// console.log(listItem)
+
+
+//////////////////////////////// GETELEMENTSBYTAGNAME()
+// const listItem = document.getElementsByTagName('li')
+// console.log(listItem)
+
+
+//////////////////////////////// QUERYSELECTOR()
+// const container = document.querySelector('div.container')
+// console.log(container)
+
+
+
+//////////////////////////////// QUERYSELECTORALL()
+// const container = document.querySelectorAll('div')
+// console.log(container)
+
+
+
+
+
